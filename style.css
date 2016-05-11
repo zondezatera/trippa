@@ -1,0 +1,280 @@
+/*
+Theme Name: Angel Travel
+Author: Angel Travel
+Version: 1.0
+Text Domain: angeltravel
+*/
+
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+@media (min-width: 1200px){
+	.container {
+	width: 970px;
+	}
+}
+
+.middle{
+	padding-top: 50px;
+	padding-bottom: 30px;
+	border-bottom: 1px solid #e5e4e1;
+}
+
+.main{
+	background-color: #f4f3ee;
+}
+
+.navbar{
+	background: #fff;
+	-webkit-box-shadow: 0px 2px 0px rgba(0,0,0,0.06);
+	-moz-box-shadow: 0px 2px 0px rgba(0,0,0,0.06);
+	box-shadow: 0px 2px 0px rgba(0,0,0,0.06);
+}
+
+.head-container{
+	height: 450px;
+	background-image: url('img/back.jpg');
+	/*background-position-y: -300px;*/
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.head-container h1{
+	padding: 0 60px;
+	font-size: 46px;
+	text-align: center;
+	color: #fff;
+	font-family: "HelveticaNeueW01-75Bold","Helvetica Neue","Helvetica","Arial","sans-serif";
+	text-transform: uppercase;
+}
+
+.index_middle_title{
+	font-family: "Charter BT W01 Italic","Georgia","serif";
+	font-size: 35px;
+	font-weight: normal;
+	line-height: 1.4em;
+	text-align: center;
+	margin-top: 50px;
+}
+
+.intro{
+	float: left;
+}
+
+.intro-article{
+	width: 60%;
+	margin-left: 15px;
+	font-family: "Charter BT W01 Italic","Georgia","serif";
+	font-size: 16px;
+}
+
+.tour_title{
+	font-family: "HelveticaNeueW01-75Bold","Helvetica Neue","Helvetica","Arial","sans-serif";
+	font-size: 15px;
+	line-height: 20px;
+	text-transform: uppercase;
+}
+
+.tour_content{
+	font-size: 12px;
+	line-height: 18px;
+}
+
+.intro-block{
+	text-align: right;
+}
+
+.intro-name{
+	font-family: "HelveticaNeueW01-75Bold","Helvetica Neue","Helvetica","Arial","sans-serif";
+	font-size: 12px;
+	text-transform: uppercase;
+	color: #7b7f80;
+}
+
+.label_bottom{
+	height: 20px;
+	border-bottom: 1px dotted #ddd;
+	padding-bottom: 35px;
+	margin-bottom: 5px;
+	line-height: 25px;
+}	
+
+.logo{
+	width: 100px;
+	margin-top: 5px;
+}
+
+.tour_price{
+	float: right;
+	margin-right: 5px;
+	font-weight: bold;
+	font-size: 22px;
+}
+
+.head-container form{
+	position: relative;
+	width: 740px;
+	margin: 60px 0 8px 100px;
+	margin-bottom: 8px;
+	z-index: 1000;
+	background: #f5f3eb;
+	background: rgba(245,243,235,0.85);
+}
+
+.inputs{
+	margin: 20px 20px 20px 20px;
+	padding: 20px 0 25px 0;
+}
+
+.inputs button{
+	margin-left: 10px;
+}
+
+.head-container form input{
+	position: relative;
+	z-index: 1001;
+	float: left;
+	border: 0px;
+	padding: 0px;
+	/*margin: 5px 0px 8px 10px;*/
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	-webkit-border-radius: none;
+	-moz-border-radius: none;
+	border-radius: none;
+	padding-left: 15px;
+}
+
+.fancy-input{
+	-webkit-font-smoothing: antialiased;
+	background-color: rgb(255, 255, 255);
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	color: rgb(52, 55, 56);
+	display: block;
+	float: left;
+	font-family: 'Charter BT W01 Roman', Georgia, serif;
+	font-size: 18px;
+	font-weight: normal;
+	height: 38px;
+	line-height: 28px;
+	text-align: center;
+	vertical-align: middle;
+	width: 635px;
+}
+
+.fancy-input input{
+	width: 95%;
+}
+
+/* Single page */
+
+.jumbotron { margin-bottom: 0px; }
+.jumbotron p, .jumbotron a, .jumbotron h1{ color: #fff ; text-shadow: 0px 0px 25px rgba(0, 0, 0, 0.3);  }
+.jumbotron a , .block-single a  { text-decoration: none; }
+.jumbotron .guide-img { max-height: 135px; max-width: 135px; border: 3px solid #FFF; position: absolute; left: 0; right: 0; margin-left: auto; margin-right: auto; margin-top: 15px; }
+.block-single { text-align: center; font-family: "HelveticaNeueW01-75Bold","Helvetica Neue","Helvetica","Arial","sans-serif"; padding: 45px 0;  }
+.block-single:nth-child(even) { background-color:#fff; }
+.block-single:nth-child(odd) { background-color:#f4f3ee; }
+
+.block-single .row {  margin-right: 0px;  margin-left: 0px;}
+.block-single.trip-info { padding-top: 85px;  }
+.block-single.trip-info .information {  font-size: 16px; font-family: "HelveticaNeueW01-75Bold","Helvetica Neue","Helvetica","Arial","sans-serif"; text-align: left; }
+.guest-info { max-width: 100px; max-height: 100px; }
+.row.line-review { margin: 10px 0; }
+.row.line-review p { text-align: left; }
+
+.trip-info .information {  font-size: 16px; font-family: "HelveticaNeueW01-75Bold","Helvetica Neue","Helvetica","Arial","sans-serif";  }
+
+.section-row {padding-bottom: 15px;}
+.section-thumbnail a {display: block; text-align: center; width: 150px; height:150px; border:1px solid #dadada; border-radius: 4px; box-sizing:border-box; padding-top:45px;}
+.section-thumbnail a span {vertical-align: middle; }
+.section-thumbnail a:hover {text-decoration: none; background: #fafafa}
+.section-remove-btn-container {margin-bottom:5px;}
+
+.review-img { width:100%; }
+.rating {
+    overflow: hidden;
+    display: inline-block;
+}
+.rating-input {
+	display: none;
+}
+.rating-star {        
+    display: block;
+    float: right;        
+    width: 16px;
+    height: 16px;
+    background: url('http://kubyshkin.ru/samples/star-rating/star.png') 0 -16px;
+}
+.rating-star:hover,
+.rating-star:hover ~ .rating-star,
+.rating-input:checked ~ .rating-star {
+    background-position: 0 0;
+}
+
+.max-person {display: none;}
+.guide-bio {margin-top:10px;}
+.package-overview {font-size:20px; font-family: "Times New Roman"}
+.package-content-section {font-size:20px; font-family: "Times New Roman"}
+.package-content-section .row {margin-bottom: 20px;}
+.package-user-gallery {background: #F4F3EE;}
+.package-schedule {font-size: 14px; font-family: sans-serif;}
+
+.twitter-typeahead {
+	width: 100%;
+}
+
+.typeahead, .tt-query, .tt-hint {
+	border: 2px solid #CCCCCC;
+	outline: medium none;
+	height: 46px;
+	padding: 10px 16px;
+	font-size: 18px;
+	line-height: 1.33;
+	border-radius: 6px;
+	width: 100%;
+}
+.typeahead {
+	background-color: #FFFFFF;
+}
+.typeahead:focus {
+	border: 2px solid #0097CF;
+}
+.tt-query {
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+}
+.tt-hint {
+	color: #999999;
+}
+.tt-dropdown-menu {
+	background-color: #FFFFFF;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	border-radius: 8px;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+	padding: 8px 0;
+	width: 100%;
+}
+.tt-suggestion {
+	font-size: 24px;
+	line-height: 24px;
+	padding: 3px 20px;
+}
+.tt-suggestion.tt-is-under-cursor {
+	background-color: #0097CF;
+	color: #FFFFFF;
+}
+.tt-suggestion p {
+	margin: 0;
+}
+
+.nav_bottom{
+	background: rgb(52, 152, 219);
+	height: 60px;
+}

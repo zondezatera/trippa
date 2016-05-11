@@ -1,0 +1,83 @@
+<?php
+/**
+ * The template for displaying search results pages.
+ *
+ * @package WordPress
+ * @subpackage Twenty_Fifteen
+ * @since Twenty Fifteen 1.0
+ */
+get_header(); ?>
+
+	<div class="main">
+		<div class="container">
+
+			<div class="row">
+
+
+			<?php if ( have_posts() ) : ?>
+
+				<header class="page-header">
+					<h1 class="page-title"><?php printf( esc_html__( 'Search Results for: %s', 'angeltravel' ), get_search_query() ); ?></h1>
+				</header><!-- .page-header -->
+
+				<?php
+				// Start the loop.
+				while ( have_posts() ) : the_post(); ?>
+
+					<?php get_template_part( 'content', 'search' ); ?>
+
+
+						<div class="col-sm-6 col-md-4">
+							<a href="<?php the_permalink(); ?>">
+						    	<div class="thumbnail">
+						    	<?php the_post_thumbnail(); ?>
+						    		<?php echo wp_get_attachment_image( "image-size"); ?>
+										<div class="caption">
+						            	<h3 class="tour_title"><?php the_title(); ?></h3>
+						            	<p class="tour_content">
+						            	<div class="label_bottom">
+								    		<?php 
+								    			if (get_field('tour_type') == 'Group Tour'){
+								    				echo "<span class='tour_group label label-warning'>";
+								    				echo 'Group';
+								    				echo "</span>";
+								    			} else{
+								    				echo "<span class='tour_private label label-primary'>";
+								    				echo 'Private';
+								    				echo "</span>";
+								    			}
+								    		?>
+								    		<?php if(get_field('price') != ""){ ?>
+									    		<span class="tour_price"><?php echo get_field('price'); ?> $</span>
+											<?php } ?>
+						            	</div>
+						            	<?php echo mb_substr(strip_tags(get_sub_field('context')),0,200).'...'; ?></p>
+						            	<p></p>
+						          	</div>
+						        </div>
+						    </a>
+					    </div>
+
+				<?php
+				endwhile;
+
+				// Previous/next page navigation.
+				the_posts_pagination( array(
+					'prev_text'          => __( 'Previous page', 'angeltravel' ),
+					'next_text'          => __( 'Next page', 'angeltravel' ),
+					'before_page_number' => '<span class="meta-nav screen-reader-text">' . __( 'Page', 'angeltravel' ) . ' </span>',
+				) );
+
+			// If no content, include the "No posts found" template.
+			else :
+				get_template_part( 'content', 'none' );
+
+			endif;
+			?>
+
+			</div>
+		</div>
+	</div>
+
+
+<?php get_footer(); ?>
